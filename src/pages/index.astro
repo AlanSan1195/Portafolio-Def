@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Badge from "../components/Badge.astro";
+import Contenedor740px from "../components/Conteiner.astro";
+import Githubiconicon from "../components/icons/Githubicon.astro";
+import Socialpill from "../components/Socialpill.astro";
+import Reflexicon from "../components/icons/Reflex.astro";
+import Mailicon from "../components/icons/Mail.astro";
+import ExperienceLineTime from "../components/Experience.astro";
+import Proyectosicon from "../components/icons/Proyectosicon.astro";
+import Laboralicon from "../components/icons/Laboralicon.astro";
+import Proyectoss from "../components/Proyectoss.astro";
+import Sobremiicon from "../components/icons/Sobremiicon.astro";
+import Abaout from "@/components/Abaout.astro";
+import Hero from "@/components/Hero.astro";
+---
+
+<Layout
+  title="Aprende con Astro. Una pagina para aprobechar, para apreneder y para modificar"
+>
+  <main class="px-4">
+    <Contenedor740px id="/inicio" class="py-16 md:py-36">
+      <Hero />
+      <slot/>
+    </Contenedor740px>
+  <div class=" space-y-24">
+
+    <Contenedor740px id="experiencia">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Laboralicon class="size-7" />
+        Experiencia laboral
+      </h2>
+      <ExperienceLineTime />
+    </Contenedor740px>
+
+    <Contenedor740px id="proyectos">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Proyectosicon class="size-7" />
+        Proyectos
+      </h2>
+      <Proyectoss />
+    </Contenedor740px>
+
+    <Contenedor740px id="sobre-mi">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Sobremiicon class="size-7" />
+        Sobre mi
+      </h2>
+      <Abaout />
+    </Contenedor740px>
+  </div>
+  </main>
+</Layout>
