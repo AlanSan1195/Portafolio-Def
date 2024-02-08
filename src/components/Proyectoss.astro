@@ -1,0 +1,78 @@
+---
+import LInikButton from "./LInikButton.astro";
+import Astroicon from "./icons/Astroicon.astro";
+import Githubicon from "./icons/Githubicon.astro";
+import Tailwindicon from "./icons/Tailwindicon.astro";
+import Wwwicon from "./icons/Wwwicon.astro";
+
+const TAGS = {
+  ASTRO: {
+    name: "Astro",
+    class: " bg-black text-white solid border-2 border-white/10",
+    icon: Astroicon,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    class: "bg-[#003159]/60 text-white solid border-2 border-white/10 hover:",
+    icon: Tailwindicon,
+  },
+};
+
+const PROJECTS = [
+  {
+    title: "Clon Tesla- Landing page",
+    description:
+      "Un trabajo para aprender echo junto con midudev aprender y hacer proyectos junto con el es como ir a un evento artisitco al terminar y ver el resultado que se obtiene con Astro.",
+    image: "/proyects/tesla.webp",
+    link:"",
+    github: "https://github.com/AlanSan1195/tesla-landing",
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
+  },
+];
+---
+
+<section class="flex flex-col gap-y-1">
+  {
+    PROJECTS.map(({ image, title, description, link, github, tags }) => (
+      <>
+        <article>
+          <h3 class=" text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+          <p class=" text-lg mb-4 text-pretty">{description}</p>
+          <ul class="flex flex-row gap-x-2">
+            {tags.map((tag) => (
+              <li class=" mb-2">
+                <span
+                  class={` flex gap-x-2 rounded-full text-xs py-1 px-2 ${tag.class}  items-center `}
+                >
+                  <tag.icon class=" size-8" />
+                  {tag.name}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </article>
+        <img
+          class="rounded shadow-2xl shadow-white/10"
+          src={image}
+          alt={`captura de pantalla del proyecto ${image}`}
+        />
+        <foote class=" flex  gap-x-2 mt-4 justify-end">
+          <LInikButton href={github} class="bg-black text-white ">
+            <Githubicon class="size-6" />
+            Ver Codigo fuente
+          </LInikButton>
+
+
+          
+          {link && (
+            // renderizado condicional de un boton 
+            <LInikButton>
+              <Wwwicon class="size-6" href={link} />
+              Ir a pagina web
+            </LInikButton>
+          )}
+        </foote>
+      </>
+    ))
+  }
+</section>

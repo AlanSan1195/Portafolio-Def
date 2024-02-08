@@ -1,0 +1,54 @@
+---
+import Badge from "@/components/Badge.astro";
+import Conteiner from "@/components/Conteiner.astro";
+import Layout from "@/layouts/Layout.astro";
+import Socialpill from "@/components/Socialpill.astro";
+import Githubiconicon from "@/components/icons/Githubicon.astro";
+---
+
+<Layout title="Componentes | Badge">
+  <Conteiner class="flex flex-col gap-y-10 py-44 pb-72">
+    <article class="mb-10">
+      <span class="text-blue-200">
+        <h1 class="text-2xl font-bold">Badge</h1></span
+      >
+      <p>
+        El componente <code>Badge</code> es un componente que se utiliza para mostrar
+        una etiqueta con un color de fondo y un texto.
+      </p>
+      <p>
+        Este componente no tiene ninguna propiedad, solo se le pasa el texto que
+        se quiere mostrar.
+      </p>
+      <span class="text-red-300"
+        ><h1 class="mb-4 text-xl font-semibold mt-4">&lt;Badge /&gt;</h1></span
+      >
+      <Badge>Tailwind</Badge>
+    </article>
+
+    <article>
+      <span class="text-blue-200"
+        ><h1 class="text-2xl font-bold">Socialpill</h1></span
+      >
+      <p>
+        El componente <code>Socialpill</code> es un componente que se utiliza para
+        mostrar una etiqueta con un color de fondo y un texto.
+      </p>
+      <p>
+        Este componente no tiene ninguna propiedad, solo se le pasa el texto que
+        se quiere mostrar.
+      </p>
+      <span class="text-red-300">
+        <h1 class="mb-4 text-xl font-semibold mt-4">
+          &lt ScociallPil /&gt;
+        </h1></span
+      >
+      <div class="flex mb-2">
+        <Socialpill href="https://github.com/AlanSan1195?tab=repositories">
+          <Githubiconicon class="size-4 md:size-6" />
+          Github
+        </Socialpill>
+      </div>
+    </article>
+  </Conteiner>
+</Layout>

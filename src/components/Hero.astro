@@ -1,0 +1,51 @@
+---
+import Badge from "../components/Badge.astro";
+import Socialpill from "../components/Socialpill.astro";
+import Githubiconicon from "../components/icons/Githubicon.astro";
+import Reflexicon from "../components/icons/Reflex.astro";
+import Mailicon from "../components/icons/Mail.astro";
+---
+
+<div class="max-w-xl">
+  <div class="felx gap-4">
+    <img
+      class="rounded-full size-16 mb-4"
+      src="https://scontent.fgdl9-1.fna.fbcdn.net/v/t39.30808-6/290277228_5407788512593470_9159191017401720210_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=tsy2iSdSg8gAX8xslq7&_nc_ht=scontent.fgdl9-1.fna&oh=00_AfCzdi7z_av8Q1LV1YVsj-qm-QFm-D-4v01CD4hjORocQA&oe=65C037F5"
+      alt=" mi foto"
+    />
+
+    <h1
+      class="text-white text-3xl md:text-3xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+    >
+      Hey, soy alan<a
+        href="https://www.instagram.com/alanpro._/"
+        target="_blank"
+        rel="nooponer"
+        class="flex justify-center items-center"><Badge>Instagram</Badge></a
+      >
+    </h1>
+  </div>
+  <h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px]">
+    <span class="text-orange-300">Probando Astro</span> 🚀 Su simplifidad me gusta
+    mucho, esta herramienta nos ayudará a crear paginas estaticas sin cargar nada
+    de <span class="text-yellow-200"> JavaScript.</span>
+    <br />
+    <span class="text-blue-200">lo que mejora muchismo el renidmiento</span>
+    de las pagians web aparte de ser agnostico a la bibleoteca.
+  </h2>
+  <nav class="flex gap-4 mt-4">
+    <Socialpill href="https://github.com/AlanSan1195?tab=repositories">
+      <Githubiconicon class="size-4 md:size-6" />
+      Github
+    </Socialpill>
+
+    <Socialpill href="https://reflex.dev/">
+      <Reflexicon />
+    </Socialpill>
+
+    <Socialpill href="">
+      <Mailicon class="size-4 md:size-6" />
+      alansandovalt1@gmail.com
+    </Socialpill>
+  </nav>
+</div>
