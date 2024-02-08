@@ -1,8 +1,8 @@
 # Poirfolio hecho junto con la comunidad de Midudev, mi diseño no cuenta con un Dark Mode y aún falta agregar proximos proyectos 
 
-<img width="1440" alt="Captura de pantalla 2024-02-08 a la(s) 4 34 35 p m" src="https://github.com/AlanSan1195/Portafolio-Def/assets/130740412/1aba7d2d-8768-42d2-a2aa-e9e1f2b4208c">
+![286shots_so](https://github.com/AlanSan1195/Portafolio-Def/assets/130740412/88eedd3c-1a9b-4599-8ca3-463992247607)
+
 <hr/>
+![830shots_so](https://github.com/AlanSan1195/Portafolio-Def/assets/130740412/c07caa78-5a67-4665-af36-1ec626554d57)
 
-
-<img width="1440" alt="Captura de pantalla 2024-02-08 a la(s) 4 34 48 p m" src="https://github.com/AlanSan1195/Portafolio-Def/assets/130740412/ab2bb46e-4cfb-400a-9e4c-9c47b055151a">
-<img width="1440" alt="Captura de pantalla 2024-02-08 a la(s) 4 35 05 p m" src="https://github.com/AlanSan1195/Portafolio-Def/assets/130740412/0320dd2f-ce94-4cab-a3d8-5fc3625796a5">
+![584shots_so](https://github.com/AlanSan1195/Portafolio-Def/assets/130740412/af4eb4f4-14e8-470c-b5d6-471a8c3e111b)
